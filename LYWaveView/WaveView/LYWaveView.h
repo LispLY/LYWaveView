@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYWaveView : UIView
-
+@property (nonatomic, assign) BOOL animation;
 @end
 
 NS_ASSUME_NONNULL_END
