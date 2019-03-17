@@ -13,6 +13,9 @@
 		DE0456A02236312C00518DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE04569F2236312C00518DD0 /* Assets.xcassets */; };
 		DE0456A32236312C00518DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0456A12236312C00518DD0 /* LaunchScreen.storyboard */; };
 		DE0456A62236312C00518DD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0456A52236312C00518DD0 /* main.m */; };
+		DEA8345C223657CC00E624BB /* LYWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA8345B223657CC00E624BB /* LYWaveView.m */; };
+		DEA8345F223657FA00E624BB /* ZJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA8345E223657FA00E624BB /* ZJLabel.m */; };
+		DEA8346322366D9D00E624BB /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA8346222366D9D00E624BB /* YYWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		DE0456A22236312C00518DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE0456A42236312C00518DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE0456A52236312C00518DD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEA8345A223657CC00E624BB /* LYWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYWaveView.h; sourceTree = "<group>"; };
+		DEA8345B223657CC00E624BB /* LYWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYWaveView.m; sourceTree = "<group>"; };
+		DEA8345D223657FA00E624BB /* ZJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLabel.h; sourceTree = "<group>"; };
+		DEA8345E223657FA00E624BB /* ZJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLabel.m; sourceTree = "<group>"; };
+		DEA8346122366D9D00E624BB /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		DEA8346222366D9D00E624BB /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		DE0456952236312900518DD0 /* LYWaveView */ = {
 			isa = PBXGroup;
 			children = (
+				DEA83459223657B600E624BB /* WaveView */,
 				DE0456962236312900518DD0 /* AppDelegate.h */,
 				DE0456972236312900518DD0 /* AppDelegate.m */,
 				DE0456992236312900518DD0 /* ViewController.h */,
@@ -69,6 +79,27 @@
 				DE0456A52236312C00518DD0 /* main.m */,
 			);
 			path = LYWaveView;
+			sourceTree = "<group>";
+		};
+		DEA83459223657B600E624BB /* WaveView */ = {
+			isa = PBXGroup;
+			children = (
+				DEA8346022366D8100E624BB /* WeakProxy */,
+				DEA8345A223657CC00E624BB /* LYWaveView.h */,
+				DEA8345B223657CC00E624BB /* LYWaveView.m */,
+				DEA8345D223657FA00E624BB /* ZJLabel.h */,
+				DEA8345E223657FA00E624BB /* ZJLabel.m */,
+			);
+			path = WaveView;
+			sourceTree = "<group>";
+		};
+		DEA8346022366D8100E624BB /* WeakProxy */ = {
+			isa = PBXGroup;
+			children = (
+				DEA8346122366D9D00E624BB /* YYWeakProxy.h */,
+				DEA8346222366D9D00E624BB /* YYWeakProxy.m */,
+			);
+			path = WeakProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA8345F223657FA00E624BB /* ZJLabel.m in Sources */,
 				DE04569B2236312900518DD0 /* ViewController.m in Sources */,
+				DEA8346322366D9D00E624BB /* YYWeakProxy.m in Sources */,
 				DE0456A62236312C00518DD0 /* main.m in Sources */,
+				DEA8345C223657CC00E624BB /* LYWaveView.m in Sources */,
 				DE0456982236312900518DD0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
